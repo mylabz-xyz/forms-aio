@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es6",
+    "strict": true,
+    "noEmit": true
+  },
+  "include": ["*.d.ts"],
+  "exclude": ["node_modules/**"]
+}
