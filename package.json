@@ -1,0 +1,45 @@
+{
+  "name": "@mylabz.xyz/forms-aio",
+  "version": "0.0.0",
+  "description": "All-in-one forms, easily manage complex forms",
+  "main": "index.js",
+  "files": [
+    "types/*.d.ts"
+  ],
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js",
+    "publish": "npm publish --access public",
+    "lint": "eslint src test example",
+    "dev:test": "jest --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylabz-xyz/forms-aio.git"
+  },
+  "author": "Boucham Amine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mylabz-xyz/forms-aio/issues"
+  },
+  "homepage": "https://github.com/mylabz-xyz/forms-aio#readme",
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@types/jest": "^28.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "buble": "^0.20.0",
+    "exlint": "^0.1.6",
+    "jest": "^28.1.1",
+    "mocha": "^10.0.0",
+    "prettier": "^2.6.2",
+    "rollup": "^2.75.6",
+    "typescript": "^4.7.3"
+  }
+}
