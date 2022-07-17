@@ -1,0 +1,6 @@
+[submodule "vue-forms-aio"]
+	path = vue-forms-aio
+	url = git@github.com:mylabz-xyz/vue-forms-aio.git
+[submodule "ng-forms-aio"]
+	path = ng-forms-aio
+	url = git@github.com:mylabz-xyz/ng-forms-aio.git
