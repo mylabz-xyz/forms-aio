@@ -10,3 +10,6 @@
 [submodule "svelte-forms-aio"]
 	path = svelte-forms-aio
 	url = git@github.com:mylabz-xyz/svelte-forms-aio.git
+[submodule "forms-aio-sdk"]
+	path = forms-aio-sdk
+	url = git@github.com:mylabz-xyz/forms-aio-sdk

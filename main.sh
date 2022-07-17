@@ -5,7 +5,7 @@
   You can set duration with duration="" e.g. 2s, 2m, 2h. Default 1s
 " && exit
 
-DEFAULT_COMMIT_MSG=":construction: : in work progress from main lib mylabz-xyz/forms-aio"
+DEFAULT_COMMIT_MSG="':construction: : in work progress from main lib mylabz-xyz/forms-aio'"
 
 for ARGUMENT in "$@"
 do
@@ -17,7 +17,7 @@ do
             pull)              pull=${VALUE} ;;
             push)              push=${VALUE} ;;
             push-force)              push-force=${VALUE} ;;
-            checkout-develop)        checkout-develop=${VALUE} ;;
+            checkoutDevelop)        checkoutDevelop=${VALUE} ;;
             msg)        msg=${VALUE} ;;
             commit)        commit=${VALUE} ;;
             *)
@@ -32,6 +32,7 @@ if [ -n "$prepare" ]
      git submodule add git@github.com:mylabz-xyz/react-forms-aio.git
      git submodule add git@github.com:mylabz-xyz/vue-forms-aio.git
      git submodule add git@github.com:mylabz-xyz/ng-forms-aio.git
+     git submodule add git@github.com:mylabz-xyz/forms-aio-sdk
 fi
 
 if [ -n "$init" ]
@@ -50,12 +51,12 @@ if [ -n "$push" ]
     git submodule foreach git push
 fi
 
-if [ -n "$checkout-develop" ]
+if [ -n "$checkoutDevelop" ]
   then
      git submodule foreach git checkout develop
 fi
 
 if [ -n "$commit" ]
   then
-     git submodule foreach git commit -m ${msg:-${DEFAULT_COMMIT_MSG}}
+     git submodule foreach "git commit -m ${msg:-${DEFAULT_COMMIT_MSG}} || :"
 fi
