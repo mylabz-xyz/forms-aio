@@ -4,3 +4,9 @@
 [submodule "ng-forms-aio"]
 	path = ng-forms-aio
 	url = git@github.com:mylabz-xyz/ng-forms-aio.git
+[submodule "react-forms-aio"]
+	path = ng-forms-aio
+	url = git@github.com:mylabz-xyz/react-forms-aio.git
+[submodule "svelte-forms-aio"]
+	path = ng-forms-aio
+	url = git@github.com:mylabz-xyz/svelte-forms-aio.git
